@@ -3,5 +3,7 @@ Author=Shivam Choudhary
 This is my Web development course git repo
 <br>
 In this course i will teach you full web development.
-It helps you to increase your knowledge about web development. 
-I will share you my knowledge of web development.
+This course will enhance your knowledge about web development.
+I will share you my full knowledge about web development.
+<br>
+If you like my code hit the star button.
