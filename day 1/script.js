@@ -1,0 +1,1 @@
+alert('In javascript the alert tag is used to give you an alert when you vsit the website')
