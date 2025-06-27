@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector and MasterClass</title>
+    <style>
+        /* ELement selector  */
+        div{
+            /* background-color: aqua; */
+        }
+        /* class selector  */
+        .red{
+            background-color: aqua;
+        }
+
+        /* Id Selector  */
+        #blue{
+            background-color: blue;
+            color: aquamarine;
+        }
+
+        /* Child Selector  */
+        div > p {
+            color: rgb(189, 218, 92);
+            background-color: rgb(56, 196, 94);
+        }
+        /* Descendant Selector  */
+        div p{
+            color: rgb(16, 119, 210);
+            background-color: rgb(215, 215, 11);
+        }
+        /* Universal Selector  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selectors  */
+        a:visited{
+            color: goldenrod;
+        }
+        a:link{
+            color: aqua;
+        }
+        a:active{
+            background-color: red
+        }
+        a:hover{
+            background-color: black;
+        }
+
+    </style> 
+</head>
+<body>
+   <div class="red">
+    i am a div
+    <article>
+         <p>
+        i am a para inside div
+    </p>
+   </div>
+    </article>
+   
+   <div id="blue">
+    i am a another div
+   </div>
+   <a href="https://google.com">GO to Google</a>
+   <a href="https://instagram.com">GO To Instagram</a>
+</body>
+</html>
