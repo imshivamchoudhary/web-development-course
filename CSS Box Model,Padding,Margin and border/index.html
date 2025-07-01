@@ -1,37 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Box Model - CodeVerseShivam</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        .box{
+
+        .box {
             background-color: yellow;
         }
-        .box1{
+
+        .box1 {
             color: rgb(41, 189, 110);
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid black;
+            height: 100px;
+            box-sizing: border-box;
 
         }
-        .box2{
+
+        .box2 {
             color: orangered;
         }
     </style>
 </head>
+
 <body>
-    <main><h1>CSS Box Model</h1>
-    The css box model defines how elements are rendered and how their dimension are calculated.
-It describe the structure of an element as a rectangular box that has content,padding a border and a margin.
-The box model consist of four components which are.
-<h2>1.Content</h2>
-<ul>
-    <li>The inner most component of the box model is the actual content of the element it can be text,image ,video,etc</li>
-    <li>The content area is define by the <b>width</b> and <b>height</b> properties.</li>
-</ul></main>
-<div class="box box1 ">i am a box </div>
-<div class="box box2 ">i am  another box </div>
+    <main>
+        <h1>CSS Box Model</h1>
+        The css box model defines how elements are rendered and how their dimension are calculated.
+        It describe the structure of an element as a rectangular box that has content,padding a border and a margin.
+        The box model consist of four components which are.
+        <div>The CSS Box Model can be visually represented as :</div>
+        <img width="550" src="Screenshot 2025-07-01 000221.png" alt="CSS Box Model Diagram">
+        <h3>Calculate the total dimension of the element:</h3>
+        The total width and height of the element is calculated with formula :
+
+        <ul>
+            <li>total width =width+ left padding + right padding + left border + right border+left margin + right margin
+            </li>
+            <li>Total height = Height + Top padding + Bottom padding + Top border + Bottom border + Top margin + Bottom margin</li>
+        </ul>
+        <h2>1.Content</h2>
+        <ul>
+            <li>The inner most component of the box model is the actual content of the element it can be text,image
+                ,video,etc.</li>
+            <li>The content area is define by the <b>width</b> and <b>height</b> properties.</li>
+        </ul>
+        <h2>2.Padding</h2>
+        <ul>
+            <li>The space between the actual content and the border of the element is the padding. </li>
+            <li>The padding area is define by the property of padding. </li>
+        </ul>
+        <h2>3.Border</h2>
+        <ul><li>The border surrounds the content and padding and gives the visual border of the element.</li>
+        <li>The border properties can be controlled by using border keyword. </li></ul>
+        <h2>4.Margin</h2>
+        <ul>
+            <li>The margin is the space outside the element that seperates it from other element in the layout.</li>
+            <li>The margin of the element is controlled by the margin property. </li>
+        </ul>           
+    </main>
+
+    <h3>Example :</h3>
+    <div class="box box1 ">i am a box </div>
+    <div class="box box2 ">i am another box </div>
 </body>
+
 </html>
