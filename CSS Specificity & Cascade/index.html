@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Specificity & Cascade -CodeVerseShivam</title>
+    <style>
+        .yellow {
+            color: yellow;
+        }
+
+        .red {
+            color: red;
+        }
+        /* The speciticity of the selector is 1+10=11 */
+        h1.blue {
+            color: blue;
+        }
+
+        h1 {
+            color: orange;
+        }
+         /* This is an example of attribute selector */
+        [data-a=s]{
+            color: aqua;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div>
+        <h1 class="yellow red blue" data-a="s">CSS Specificity</h1>
+        <h2>Cascade Algorithm</h2>
+        <p>The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an html element .It's
+            the reason that the text of the bottom styled with the above CSS will be the blue.</p>
+        <h2>
+            The cascade algorithm has 4 distinct stage .
+        </h2>
+        <ol>
+            <li>Position and order of appearance: The order in which your CSS rules appear. </li>
+            <li>Specificity:an algorithm that determines which CSS selector has the strongest match. </li>
+            <li>Origin:the origin in which CSS appears and where it comes from, whether that is a browser style,CSS from a browser extension , or your authored CSS. </li>
+            <li>Importance:some CSS rules are weighted more than others ,especially with the !important rule type.</li>
+        </ol>
+        <P>
+            The order of speciticity is:
+            <b>
+                Inline style > ID selector > Class or Attribute Selector > Element Selector > Universal Selector
+            </b>
+        
+        </P>
+
+    </div>
 </body>
+
 </html>
