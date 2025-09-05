@@ -7,7 +7,28 @@
 <style>
     .b{
         border: 2px solid black;
-        padding: 23px;
+        padding: 20px;
+        box-shadow: 1px 4px 10px 5px yellow;
+        border-radius: 5px;
+        /* margin: 20px; */
+    }
+    .box{
+        padding: 5px;
+        border: 2px solid;
+        background-color: aqua;
+        border-radius: 5px
+        ;
+    }
+    .text-element{
+        text-shadow: 2px 2px 4px rebeccapurple;
+
+    }
+    .pp{
+        border: 2px solid;
+        background-color: rgb(193, 150, 175);
+        outline: 3px solid rgb(163, 216, 227);
+        border: 2px solid green;
+        outline-offset: 3px;
     }
 </style>
 </head>
@@ -19,15 +40,42 @@
     <div class="b">
         I am a div.
     </div>
-    <pre> <code>box-shadow: h-offset v-offset blur spread color inset;</pre>
+    <pre class="box"> <code>box-shadow: h-offset v-offset blur spread color inset;</pre>
     </code>
-    <code>.div{ box-shadow: 5px 5px 15px 5px #888888;} </code>
-     <ul><li>
-h-offset &amp; v-offset : Determine the shadows horizontal and vertical position.
-     </li>
+    <ul><li>
+        h-offset &amp; v-offset : Determine the shadows horizontal and vertical position.
+    </li>
     <li>blur: The large the value ,the blurrier the shadows</li>
-    </ul> 
-    
-     
+    <li>Spread: Expands or shrinks the shadow size.</li>
+    <li>inset:Makes the shadow inner.</li>
+</ul> 
+    <p>here is an example:</p>
+<div>
+    <code class="box">.div{ box-shadow: 5px 5px 15px 5px #888888;} </code>
+</div>
+<div>
+    <h3> 
+        Text Shadow
+    </h2>
+</div>
+<p class="text-element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore labore delectus cupiditate tenetur eaque? Accusantium, alias. Reprehenderit odio veritatis minus atque voluptatum! Animi expedita et neque voluptatem, ea ex repudiandae quisquam rem? Provident, vitae.</p>
+<div>
+    <h2>Outline</h2>
+    <p>
+        An outline is a line that is drawn around a element, outside the borders , to make the element "stand out ". It's commonly used for accessibilty purpose, like hightlighting  focused element 
+        <div>
+            Syntax for outline;
+            <p class="pp">
+                <span style="color: blue;">outline</span>: width style color;
+            </p>
+        </div>
+    </p>
+    <ul>
+        <li>width: Set the outline width. </li>
+        <li>style: Determine the style of the outline such as solid,dotted ,or dashed.</li>
+        <li>color:Sets the outline color.</li>
+    </ul>
+</div>
+
 </body>
 </html>
