@@ -9,25 +9,69 @@
             border: 2px solid black;
             display: flex;
             height: 70vh;
-            justify-content: center;
+            /* justify-content: center; */
             align-items: center;
+            /* flex-direction: column-reverse */
+            flex-wrap: wrap;
+            /* align-content: center; */
+            /* there is no justify-items in flex box  */
+            flex-flow: row wrap;
+            row-gap: 5px;
+            column-gap: 9px;
         }
-        .box{
+        .items{
             height: 32px;
             width: 32px;
             border: 2px solid black;
             background-color: blue;
-            margin: 2px;
+            /* margin: 2px; */
+            flex-grow: 1;
         }
+.order-1{
+     order: 1;
+}
+.order-2{
+    order: 2;
+}
+.order-3{
+    order: 3;
+}
+.item-1{
+    flex-grow:4;
+    align-self: flex-end;
+}
     </style>
 </head>
 <body>
     <main class="con">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="items item-1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items order-1">4</div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        
+    
     </main>
 </body>
 </html>
