@@ -5,7 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Animations -CodeVerseShivam</title>
     <style>
+        .con{
+            width: 30vw;
+            height: 80vh;
+            background-color: blueviolet;
+        }
+        .bo{
+            width: 34px;
+            height: 45px;
+            background-color: aquamarine;
+            /* animation: boxanimation;
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+            animation-timing-function: cubic-bezier(0.7, 0.05, 0, 1.05);
+            animation-delay: 1s;
+            animation-direction:alternate-reverse; 
+            animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: boxanimation 4s ease-in-out 1s infinite alternate-reverse ;
+        }
+        @keyframes boxanimation {
+            from{
 
+            }
+            to{
+                transform: translateX(1000px);
+            }
+        }
     </style>
 </head>
 <body>
