@@ -8,12 +8,11 @@
         .con{
             width: 30vw;
             height: 80vh;
-            background-color: blueviolet;
+            background-color: blanchedalmond;
         }
         .bo{
             width: 34px;
             height: 45px;
-            background-color: aquamarine;
             /* animation: boxanimation;
             animation-duration: 4s;
             animation-iteration-count: 2;
@@ -22,14 +21,37 @@
             animation-direction:alternate-reverse; 
             animation-play-state: paused; */
             /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-            animation: boxanimation 4s ease-in-out 1s infinite alternate-reverse ;
+            animation: boxanimation 4s ease-in-out 3s 2 alternate-reverse,
+                        box2 4s ease-in-out 2s alternate-reverse   ;
         }
         @keyframes boxanimation {
             from{
-
+                background-color: orangered;
             }
             to{
                 transform: translateX(1000px);
+                background-color: yellowgreen;
+            }
+        }
+        @keyframes box2 {
+            0%{
+                transform: rotate(100deg);
+
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            40%{
+                transform: rotate(250deg);
+            }
+            50%{
+                transform: rotate(300deg);
+            }
+            80%{
+                transform: rotate(310deg);
+            }
+            100%{
+                transform: rotate(360deg);
             }
         }
     </style>
