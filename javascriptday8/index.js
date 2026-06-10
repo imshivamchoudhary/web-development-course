@@ -14,4 +14,14 @@ console.log(con.lastElementChild)
 console.log(con.firstElementChild.style.color="red")
 con.firstElementChild.style.color="blue"
 con.firstElementChild.style.background="red"
-
+console.log(con.firstElementChild.parentElement)
+let a=document.body.firstElementChild 
+console.log(a)
+console.log(a.children)
+console.log(a.children[0])
+console.log(a.children[4])
+a.children[2].style.color="orange"
+a.children[2].style.background="yellow"
+console.log(a.children[2].nextElementSibling)
+console.log(a.children[2].previousElementSibling)
+console.log(a.children[2].previousSibling)
