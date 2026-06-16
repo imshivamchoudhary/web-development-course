@@ -7,3 +7,26 @@ console.log(document.querySelector(".container").nodeName)
 console.log(document.querySelector(".container").hidden)
 // console.log(document.querySelector(".container").hidden=true)
 document.querySelector(".box").innerHTML="hey i am shivam"
+console.log(document.querySelector(".container").hasAttribute("style"))
+console.log(document.querySelector(".container").getAttribute("style"))
+console.log(document.querySelector(".container").setAttribute("style","background:yellow"))
+console.log(document.querySelector(".container").hasAttribute("id"))
+console.log(document.querySelector(".container").attributes)
+console.log(document.querySelector(".container").removeAttribute("style"))
+console.log(document.querySelector(".box").dataset)
+
+
+let div= document.createElement("div")
+div.innerHTML= ("hey i have been created by <b>Shivam</b>")
+div.setAttribute("class","created")
+document.querySelector(".container").append(div)
+
+let con=document.querySelector(".container")
+con.insertAdjacentHTML("beforeend","<b>Hey i am new con</b>")
+
+console.log(document.querySelector(".container").classList)
+console.log(document.querySelector(".container").className)
+console.log(document.querySelector(".container").classList.add("sh"))
+console.log(document.querySelector(".container").classList.remove("yee"))
+console.log(document.querySelector(".container").classList.toggle("sh"))
+console.log(document.querySelector(".container").classList.toggle("sh"))
