@@ -13,10 +13,15 @@ button.addEventListener("contextmenu", () => {
     alert("don't right clicked please !!")
 })
 
-button.addEventListener("keydown",(e)=>{
-    console.log(e)
-})
+// button.addEventListener("keydown",(e)=>{
+//     console.log(e)
+// })
+
+// document.addEventListener("keydown",(e)=>{
+//     // console.log(e)
+// })
+
 
 document.addEventListener("keydown",(e)=>{
-    console.log(e)
+    console.log(e,e.key,e.keyCode)
 })
